@@ -1,0 +1,47 @@
+# 
+Client Requirements:
+
+Asitis(Alias) company that has recently started their own development team for internal projects. After a while, they contacted us because their 
+development and release cycle (They work using Agile methodology), is a “message” - using their words.
+After a quick survey and information gathering meeting, these facts could be noticed:
+    • All 25 developers work on three different projects. The company has an SVN server, but it’s not always updated since some of them work strictly 
+	off their own workstations, and when it’s time to build the release they meet to see who has the latest code, and they merge it on the run and build
+	 locally.
+    • The application was tested locally in each developer’s workstation and working out the errors. After a consensus that the release was ok to deploy, 
+	the final release package was manually built.
+    • The projects were two PHP websites and one Java backend. When the time came for releasing to Production, the process was: backing up what was 
+	currently in production in a tar.gz file and keep it for a couple of weeks just in case, and overwriting with the new package.
+Since they realized they needed to hire more developers because they were going to need to confront more projects soon, they requested us to help 
+them organize their process because:
+
+Project Manager says:
+Process to reach consensus on finding latest changes and build the release took too long; it’s time developers could use for solving problems or start
+ coding new features.
+Testing also took too long, and never seemed enough since lots of bugs were found after each release. He would like his team to focus on coding and
+ not spend time on finding errors, just solve them.
+
+Product Owner says:
+Going forward, they realized they would need to keep a history of the builds for company’s standards compliance.
+They would like to give the end users the possibility to have user acceptance testing on their app before it’s released.
+
+
+As of Client requirements i will recommend these tools
+
+1.Git for version controll system 
+    • Basically it is Distributed version controll system.
+    • We can work offline and once you connected online you can Push or Pull your code.
+    • Every one will work what ever updated version code.
+    • Log history is available.
+
+2. Jenkins for Continuous integration and Continuous Delivery
+   What ever new code changes available will be reflect on other developers  for those provision Jenkins will do perfect job for our requirements,
+    we have more options in jenkins.
+    ▪ To esclate manual build process we have Automation process (Build periodically and  Poll SCM using of Cron Tab).
+    ▪ To automate continuous integration and continuous deliveries we have Pipeline jobs.
+    ▪ Jenkins is open source application and Plugin features.
+    ▪  It supports Master slave jobs 
+    ▪ Jenkins will do Deployment job also
+
+3. I recommand Nexus Artifactory  for releases.
+
+4. We will do UAT tesing on test servers before Deploying production environment for getting acceptance from client.
